@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+<style>
+    #main{
+        height: 100%;
+        width:100%;
+        background-color:#f9f9f9;
+        position: relative;
+    }
+    #nav{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+    }
+    #nav #part2{
+     display: flex;
+     padding: 0px 30px;
+     align-items: center;
+     justify-content: center;
+    }
+    #nav #part2 a{
+    color:black;
+    margin: 20px;
+    text-decoration: none;
+    position: relative;
+    }
+    #nav #part2 a:nth-last-child(1){
+    padding: 1px 36px;
+    border-radius: 50px;
+    border:1px solid black;
+    overflow: hidden;
+    position: relative;
+    }
+    #nav #part2 a:nth-last-child(1) #green{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    left: -100%;
+    top:0;
+    position: absolute;
+    transition: left 0.4s ease;
+    z-index: 0;
+    }
+    #nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100px;
+    position: relative;
+    z-index: 1;
+    }
+    #nav #part2 a:nth-last-child(1):hover #green{
+    left:0%;
+    }
+</style>
+  </head>
+  <body>
+    <div id="main">
+        <div id="nav">
+        <h1>This is the digital</h1>
+        <div id="part2">
+            <a href="#">Services</a>
+            <a href="#">Culture</a>
+            <a href="#">Home</a>
+            <a href="#">Contact us</a>
+            <a href="#">Work</a>
+            <a href="#"><h5>Contact us</h5> <div id="green"></div></a>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

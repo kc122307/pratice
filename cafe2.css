@@ -1,0 +1,26 @@
+#parent{
+background-color: red;
+display: flex;
+width: 90vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+}
+header{
+display: flex;
+justify-content: flex-end;
+}
+#input{
+background-color: yellow;
+display: flex;
+flex-direction: column;
+justify-content: end;
+align-items: end;
+width: 200px;
+height: 200px;
+}
+footer{
+display: flex;
+width: 10px;
+height: 10px;
+}
