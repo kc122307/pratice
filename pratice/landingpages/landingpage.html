@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+<style>
+  body,html{
+    height: 100%;
+    width: 100%;
+  }
+    #main{
+        height: 100%;
+        width:100%;
+        background-color:#f9f9f9;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main>h1{
+      font-size: 5.4vw;
+      font-weight: 100;
+      width: 40%;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+      z-index: 1;
+    }
+    #main>h1::after{
+      content:"";
+      position: absolute;
+      height: 16px;
+      width:40%;
+      background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+      bottom:-5%; 
+      left:50%;
+      background-size: cover;
+      transform: translate(-50%,0);
+    }
+    #main img{
+    transition: margin 0.4s ease ;
+    }
+    #main img:hover{
+    margin-top : -10px;
+    }
+    #main #img1{
+     height: 300px;
+     width: 290px;
+     position: absolute;
+     right:27%;
+     bottom:10%;
+    }
+    #main #img2{
+     height: 300px;
+     width: 290px;
+     position: absolute;
+     right:17%;
+     top:10%;
+    }
+    #main #img3{
+     height: 400px;
+     width: 290px;
+     position: absolute;
+     left:7%;
+     top:20%;
+    }
+    #nav{
+     height: 100px;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     position: fixed;
+     justify-content: space-between;
+     align-items: center;
+     top: 0;
+        
+    }
+    #nav #part2{
+     display: flex;
+     padding: 0 30px;
+     align-items: center;
+     justify-content: center;
+    }
+    #nav #part2 a{
+    color:black;
+    margin: 20px;
+    text-decoration: none;
+    position: relative;
+    }
+    #nav #part2 a:nth-last-child(1){
+    padding: 1px 36px;
+    border-radius: 50px;
+    border:1px solid black;
+    overflow: hidden;
+    position: relative;
+    }
+    #nav #part2 a:nth-last-child(1) #green{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    left: -100%;
+    top:0;
+    position: absolute;
+    transition: left 0.4s ease;
+    z-index: 0;
+    }
+    #nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100px;
+    position: relative;
+    z-index: 1;
+    }
+    #nav #part2 a:nth-last-child(1):hover #green{
+    left:0%;
+    }
+</style>
+  </head>
+  <body>
+    <div id="main">
+        <div id="nav">
+        <h1>This is the digital</h1>
+        <div id="part2">
+            <a href="#">Services</a>
+            <a href="#">Culture</a>
+            <a href="#">Home</a>
+            <a href="#">Contact us</a>
+            <a href="#">Work</a>
+            <a href="#"><h5>Contact us</h5> <div id="green"></div></a>
+        </div>  
+        </div>
+        <h3>digital Functions here</h3>
+
+        <img src="https://i5.walmartimages.com/asr/7c1adce1-828b-48a5-aae1-63edb269515b.68a2b34c5b756b16ecf3b7fe1d77b2af.jpeg" alt="" id="img1">
+        <img src="https://th.bing.com/th/id/OIP.VTUnJYg0vX30VZwe06dkwwHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3" alt="" id="img2">
+        <img src="https://th.bing.com/th/id/OIP.Bwbc_TcTMoAEmPXRRNDADQHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain" alt="" id="img3">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="style2.js"> 
+   
+    </script>
+  </body>
+</html>

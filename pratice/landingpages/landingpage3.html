@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+html,body{
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+#main{
+height: 100%;
+width: 100%;
+background-color:hsl(164, 84%, 26%);
+display: flex;
+}
+#part1{
+height: 100%;
+width: 26%;
+}
+#part2{
+height: 100%;
+width: 67%;
+background-image: url(https://images.unsplash.com/photo-1535718868447-172ef5d32fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY3fHxtb2RlbCUyMHBpY3N8ZW58MHx8MHx8fDA%3D);
+background-size: cover;
+background-position: center; 
+}
+#part3{
+height: 100%;
+width: 7%;
+ }
+#overlay{
+height: 100%;
+width: 100%;
+background-color: rgba(16, 141, 99, 0.348);
+}
+#textdiv{
+    width: 400px;
+    position: absolute;
+    left:7%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#textdiv>h1{
+font-size: 80px;
+font-family: monument;
+font-weight: 800;
+letter-spacing: 10px;
+text-transform: uppercase;
+line-height: 70px;
+color: #fff;
+}
+#main #smallimg{
+ height: 400px;
+ width:300px;
+ right:5%;
+ position: absolute;
+ top:50%;
+ background-image: url(https://images.unsplash.com/photo-1496440737103-cd596325d314?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBwaWNzJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D);
+ transform: translate(0,-50%);
+}
+#verticaltext{
+position: absolute;
+right: -50%;
+top: -10%;
+z-index: 55;
+transform: rotate(90deg);
+transform-origin: 0%;
+}
+#verticaltext h1{
+font-size:  70px;
+font-weight: 800;
+color: transparent;
+font-family: monument;
+letter-spacing: 20px;
+text-transform: uppercase;
+-webkit-text-stroke-color: #fff ;
+-webkit-text-stroke-width: 2px ;
+}
+#nav{
+position: absolute;
+width: 450px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+top:10%;
+left:10%;
+}
+#nav img{
+  height: 50px;
+}
+#nav h5{
+  font-size: 20px;
+  font-family: gilroy;
+  color:#fff;
+}
+  </style>
+  <body>
+    <div id="main">
+     <div id="nav">
+      <img src="https://www.chungiyoo.com/img/faces/smile%2002-red.svg">
+       <h5>Suzana dumel</h5>
+     </div>
+    <div id="part1"></div>
+    <div id="part2"><div id="overlay"></div></div>
+    <div id="part3"></div>
+    <div id="textdiv">
+        <h1>NATURE</h1>
+        <h1>MORTE</h1>
+        <h1>FOR</h1>
+        <h1>HARPERS</h1>  
+    </div>
+    <div id="smallimg">
+        <div id="overlay"></div>
+    </div>
+    <div id="verticaltext">
+        <h1>Selction Winter</h1>
+    </div>
+    </div>
+  </body>
+</html>

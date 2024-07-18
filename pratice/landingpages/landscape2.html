@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <style>
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+    }
+#center{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 70%;
+    width: 70%;
+}
+.text{
+    position: absolute;
+    bottom: 15%;
+    left: -10%;
+    overflow: hidden;
+    z-index: 999;
+    width: 400px;
+    height: 100px;
+}
+.text h1{
+    position: relative;
+    font-size: 3vw;
+    top: 100px;
+    color:aliceblue;
+}
+.imagecontainer{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+  </style>
+  <body>
+    <div id="main">
+     <div id="center">
+    <div class="text">
+        <h1>Building 1</h1>
+        <h1>Building 2</h1>
+        <h1>Building 3</h1>
+    </div>
+     <div id="one" class="imagecontainer" >
+    <img src="https://th.bing.com/th/id/OIP.bJZHEpJLk0NjF12D2uA_uAHaFP?rs=1&pid=ImgDetMain" alt="" id="img1">
+    </div>
+    <div id="two" class="imagecontainer">   
+     <img src="https://www.ronenbekerman.com/wp-content/uploads/2018/07/3d-max-realistic-render-house-exterior.jpg" alt="" id="img2">
+    </div>
+    <div id="three" class="imagecontainer">
+        <img src="https://www.architectureanddesign.com.au/getattachment/f0876a19-775f-4dd4-9c27-ef51f5054f99" alt="" id="img3">
+    </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      gsap.to(".imagecontainer",{
+      ease: Expo.easeInOut,
+      width:"100%",
+      stagger:1.5,
+      duration:1.5
+      })  
+      gsap.to(".text h1",{
+      ease: Expo.easeInOut,
+      width:"100%",
+      stagger:1.5,
+      top:0,
+      })
+      gsap.to(".text h1",{
+      delay: 1.5,
+      ease: Expo.easeInOut,
+      stagger:1.5,
+      top:"-100%"
+      })
+    </script>
+</body>
+</html>
