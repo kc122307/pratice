@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+background-color: rgb(202,238,202);
+}
+#panel{
+height: 80%;
+width: 80%;
+overflow: hidden;
+background-color: #fff;
+border-radius: 10px;
+}
+#ptop{
+justify-content: space-between;
+padding: 10px;
+display: flex;
+width: 100%;
+align-items: center;
+height: 100px;
+padding: 0 30%;
+color: #fff;
+background-color: rgb(10, 100, 10);
+}
+.box{
+font-weight: 700;
+font-size: 22px;
+padding: 10px 20px;
+color: #000;
+background-color: #fff;
+border-radius: 5px;
+}
+.elem{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+#pbtm{
+padding: 10px;
+width: 100%;
+justify-content: center;
+align-items: center;
+height: calc(100% - 100px);
+background-color: #fff;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+.elem h2{
+font-size: 22px;
+font-weight: 500;
+}
+.bubble{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+font-size: 22px;
+font-weight: 600;
+height: 60px;
+background-color:rgb(10, 100, 10) ;
+color: #fff;
+border-radius: 50%;
+font-weight: 500;
+}
+.bubble:hover{
+background-color: rgb(50,75,50);
+}
