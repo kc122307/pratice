@@ -22,7 +22,7 @@ scrollTrigger: {
 },
 });
 gsap.to("#main",{
-backgroundColor :"#000",
+backgroundColor :"transparent",
 scrollTrigger:{
 trigger:"#main",
 scroller:"body",

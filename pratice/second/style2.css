@@ -72,7 +72,7 @@ padding: 10px 20px;
 border: none;
 border-radius: 50px;
 background-color: #fff;
-color: #0b48ed;
+color: #0a3cce;
 font-size: 16px;
 }
 .bottom-page1-inner>h4{
@@ -88,7 +88,7 @@ flex-direction: column;
 align-items: start;
 justify-content: center;
 width: 100vw;
-background-color:#0b48ed;
+background-color:#0a3cce;
 color: #fff;
 padding: 0 8vw;
 }
@@ -117,7 +117,7 @@ position: relative;
 position: relative;
 height: 100vh;
 width: 100vw;
-background-color: #0b48ed;
+background-color: #0a3cce;
 display: flex;
 align-items: start ;
 justify-content: center;
@@ -140,7 +140,7 @@ color: #dadada69;
 position: relative;
 height: 100vh;
 width: 100vw;
-background-color: #0b48ed;
+background-color: #0a3cce;
 display: flex;
 align-items: start ;
 justify-content: center;
@@ -177,7 +177,7 @@ color: #fff;
 #page7{
 width: 100vw;
 height: 100vh;
-background-color: #0b48ed;
+background-color: #0a3cce;
 position: relative;
 }
 #page7>canvas{
